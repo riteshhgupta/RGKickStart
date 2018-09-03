@@ -1,0 +1,41 @@
+{
+  "name": "RGRoutable",
+  "version": "1.0",
+  "summary": "RGRoutable",
+  "authors": {
+    "Ritesh Gupta": "rg.riteshh@gmail.com"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/riteshhgupta/RGRoutable",
+  "source": {
+    "git": "https://github.com/riteshhgupta/RGRoutable.git",
+    "tag": "1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "requires_arc": true,
+  "default_subspecs": "Core",
+  "subspecs": [
+    {
+      "name": "Core",
+      "source_files": "Source/**/*.swift",
+      "exclude_files": "Source/Reactive/*.swift"
+    },
+    {
+      "name": "ReactiveSwift",
+      "dependencies": {
+        "RGRoutable/Core": [
+
+        ],
+        "ReactiveSwift": [
+          "~> 3.0"
+        ],
+        "ReactiveCocoa": [
+          "~> 7.0"
+        ]
+      },
+      "source_files": "Source/**/*.swift"
+    }
+  ]
+}

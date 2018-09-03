@@ -1,0 +1,6 @@
+framework module RGRoutable {
+  umbrella header "RGRoutable-umbrella.h"
+
+  export *
+  module * { export * }
+}

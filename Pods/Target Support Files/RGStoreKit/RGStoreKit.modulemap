@@ -1,0 +1,6 @@
+framework module RGStoreKit {
+  umbrella header "RGStoreKit-umbrella.h"
+
+  export *
+  module * { export * }
+}
