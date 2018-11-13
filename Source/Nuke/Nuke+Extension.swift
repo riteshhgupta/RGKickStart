@@ -9,16 +9,17 @@
 import Foundation
 import Nuke
 
-extension Manager: ImageDownloader {
+extension ImagePipeline: ImageDownloader {
 
     public func cachedImage(for url: URL) -> UIImage? {
-		return cache?[Request(url: url)]
+        let request = ImageRequest(url: url)
+		return ImageCache.shared[request]
 	}
 
 	public func downloadImage(for url: URL, _ handler: @escaping (UIImage?) -> Void) {
-		let nukeRequest = Request(url: url)
-		loadImage(with: nukeRequest) { (result) in
-			handler(result.value)
-		}
+		let nukeRequest = ImageRequest(url: url)
+        ImagePipeline.shared.loadImage(with: nukeRequest) { (response, _) in
+            handler(response?.image)
+        }
 	}
 }

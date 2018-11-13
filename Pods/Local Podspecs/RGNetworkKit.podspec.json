@@ -21,7 +21,7 @@
       "name": "Core",
       "dependencies": {
         "Alamofire": [
-          "~> 4.5"
+          "~> 4.7"
         ],
         "RGMapper": [
           "~> 2.1"
@@ -40,10 +40,10 @@
 
         ],
         "ReactiveSwift": [
-          "~> 3.0"
+          "~> 4.0"
         ],
         "ReactiveCocoa": [
-          "~> 7.0"
+          "~> 8.0"
         ]
       },
       "source_files": "Source/**/*.swift"

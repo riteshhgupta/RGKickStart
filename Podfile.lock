@@ -1,32 +1,32 @@
 PODS:
   - Alamofire (4.7.3)
-  - KeychainAccess (3.1.1)
-  - Nuke (6.1.1)
-  - ProtoKit (1.2)
-  - ReactiveCocoa (7.2.0):
-    - ReactiveSwift (~> 3.1)
-  - ReactiveSwift (3.1.0):
-    - Result (~> 3.2)
-  - Result (3.2.4)
+  - KeychainAccess (3.1.2)
+  - Nuke (7.5.1)
+  - ProtoKit (1.3)
+  - ReactiveCocoa (8.0.2):
+    - ReactiveSwift (~> 4.0)
+  - ReactiveSwift (4.0.0):
+    - Result (~> 4.0)
+  - Result (4.0.0)
   - RGDependencyInjector (1.0)
   - RGListKit/Core (1.0):
-    - ProtoKit (~> 1.2)
+    - ProtoKit (~> 1.3)
   - RGListKit/ReactiveSwift (1.0):
-    - ReactiveCocoa (~> 7.0)
-    - ReactiveSwift (~> 3.0)
+    - ReactiveCocoa (~> 8.0)
+    - ReactiveSwift (~> 4.0)
     - RGListKit/Core
   - RGMapper (2.1)
   - RGNetworkKit/Core (1.0):
-    - Alamofire (~> 4.5)
+    - Alamofire (~> 4.7)
     - RGMapper (~> 2.1)
   - RGNetworkKit/ReactiveSwift (1.0):
-    - ReactiveCocoa (~> 7.0)
-    - ReactiveSwift (~> 3.0)
+    - ReactiveCocoa (~> 8.0)
+    - ReactiveSwift (~> 4.0)
     - RGNetworkKit/Core
   - RGRoutable/Core (1.0)
   - RGRoutable/ReactiveSwift (1.0):
-    - ReactiveCocoa (~> 7.0)
-    - ReactiveSwift (~> 3.0)
+    - ReactiveCocoa (~> 8.0)
+    - ReactiveSwift (~> 4.0)
     - RGRoutable/Core
   - RGStoreKit (1.0.1)
   - SVProgressHUD (2.2.5)
@@ -34,12 +34,12 @@ PODS:
 
 DEPENDENCIES:
   - KeychainAccess
-  - Nuke (~> 6.0)
-  - RGDependencyInjector (from `https://github.com/riteshhgupta/RGDependencyInjector.git`)
-  - RGListKit/ReactiveSwift (from `https://github.com/riteshhgupta/RGListKit.git`)
-  - RGNetworkKit/ReactiveSwift (from `https://github.com/riteshhgupta/RGNetworkKit.git`)
-  - RGRoutable/ReactiveSwift (from `https://github.com/riteshhgupta/RGRoutable.git`)
-  - RGStoreKit (from `https://github.com/riteshhgupta/RGStoreKit.git`)
+  - Nuke
+  - RGDependencyInjector (from `https://github.com/riteshhgupta/RGDependencyInjector.git`, branch `swift4.2`)
+  - RGListKit/ReactiveSwift (from `https://github.com/riteshhgupta/RGListKit.git`, branch `swift4.2`)
+  - RGNetworkKit/ReactiveSwift (from `https://github.com/riteshhgupta/RGNetworkKit.git`, branch `swift4.2`)
+  - RGRoutable/ReactiveSwift (from `https://github.com/riteshhgupta/RGRoutable.git`, branch `swift4.2`)
+  - RGStoreKit (from `https://github.com/riteshhgupta/RGStoreKit.git`, branch `swift4.2`)
   - SVProgressHUD
   - SwiftyUserDefaults (= 4.0.0-alpha.1)
 
@@ -58,50 +58,55 @@ SPEC REPOS:
 
 EXTERNAL SOURCES:
   RGDependencyInjector:
+    :branch: swift4.2
     :git: https://github.com/riteshhgupta/RGDependencyInjector.git
   RGListKit:
+    :branch: swift4.2
     :git: https://github.com/riteshhgupta/RGListKit.git
   RGNetworkKit:
+    :branch: swift4.2
     :git: https://github.com/riteshhgupta/RGNetworkKit.git
   RGRoutable:
+    :branch: swift4.2
     :git: https://github.com/riteshhgupta/RGRoutable.git
   RGStoreKit:
+    :branch: swift4.2
     :git: https://github.com/riteshhgupta/RGStoreKit.git
 
 CHECKOUT OPTIONS:
   RGDependencyInjector:
-    :commit: 5e5c13ec259d5d45d8732d04a20a48c0069db53a
+    :commit: f7a107c8931a55231cd9865cb482d15e21394670
     :git: https://github.com/riteshhgupta/RGDependencyInjector.git
   RGListKit:
-    :commit: 8e9f55b98b36aae177676be8293a09e495e348f9
+    :commit: 8737b3744102c7acaccd244e253e8edc4d98f549
     :git: https://github.com/riteshhgupta/RGListKit.git
   RGNetworkKit:
-    :commit: 5875ac9a5fc4b85a23a6ac31005cf498db96119c
+    :commit: 4d60e9b108778693b39c95e70888fc076010eaa7
     :git: https://github.com/riteshhgupta/RGNetworkKit.git
   RGRoutable:
-    :commit: d536262af0f52ce9d786b7016a2126665cdc42e2
+    :commit: 14f5e34923b5d152bae0de5fdaec020665c95bb0
     :git: https://github.com/riteshhgupta/RGRoutable.git
   RGStoreKit:
-    :commit: 0dbd1877ddae66d4365df26921e9380ab1fc7203
+    :commit: c1f081947e780f361f4c2179d8b4ed0715001eba
     :git: https://github.com/riteshhgupta/RGStoreKit.git
 
 SPEC CHECKSUMS:
   Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
-  KeychainAccess: 7bd430028059754a3debab3cfc0bd1fc7fb85df3
-  Nuke: bf5d58b2d95ff15cb170c231fe6002d706be77e1
-  ProtoKit: 08d7a7537be05085bb18da133aafa3b13d2cb396
-  ReactiveCocoa: 476dae7ca790f40d30d186a1bd7ebae4290395d5
-  ReactiveSwift: 5b26d2e988fe0eed2daf48c4054d1de74db50184
-  Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
+  KeychainAccess: b3816fddcf28aa29d94b10ec305cd52be14c472b
+  Nuke: 3814db501e55f17951451839c726ffd91641e9a5
+  ProtoKit: b2bf8654e798e3913c4cd91c8d9bcf2eebfefe15
+  ReactiveCocoa: fbd26e9ba60e98417ee47433e59465a98ed9da0f
+  ReactiveSwift: a2bb9ace428a109e9c0209615645d9d286c8c433
+  Result: 7645bb3f50c2ce726dd0ff2fa7b6f42bbe6c3713
   RGDependencyInjector: 3fe76eb54826fed215594cc6745ff074bbb41ed3
-  RGListKit: ac72d9ab83e8e93a57dd9beb61c534f5dd794d6f
+  RGListKit: 6333202d7456bf3a1f6c73fb0019a0d295f427d5
   RGMapper: 5f4550f8fceb91e700203bb3ae71cf78a1bd215f
-  RGNetworkKit: 79744228f68f8fec42472d09ab1a0c64941537e7
-  RGRoutable: 44c1c24f1803d0fbeeaefc922124f22a201a3569
+  RGNetworkKit: 25d66fb0fa2d3e293c0135e2f2c61b15f4e7a0cb
+  RGRoutable: e3be4b020c00a560c19dff559fdb63febfeb45e0
   RGStoreKit: 1db3b4854ede6823ffb8cb4289b6c74a62f8b4a4
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   SwiftyUserDefaults: cebe0ff9472f52699772a514b6f7155861d8069b
 
-PODFILE CHECKSUM: 524b91b9c9eb3eb0631bd9dd134d428c8eff3cfe
+PODFILE CHECKSUM: c10672ecb3bf26460334867993f8c43ffbeaa633
 
 COCOAPODS: 1.5.3
